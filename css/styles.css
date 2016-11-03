@@ -1,0 +1,29 @@
+.jumbotron {
+  text-align: center;
+  font-family: monospace;
+  background-color: transparent;
+}
+
+.row-1 {
+  border-bottom: 5px solid black;
+  border-top: 5px solid black;
+}
+
+.space-1, .space-4, .space-7 {
+  border-right: 5px solid black;
+  border-left: 5px solid black;
+}
+
+.row {
+  height: 300px;
+  text-align: center;
+}
+
+.col-md-4 {
+  height: 300px;
+  text-align: center;
+}
+
+#game-board {
+  margin-top: 100px;
+}
