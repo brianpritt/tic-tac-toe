@@ -4,6 +4,41 @@
   background-color: transparent;
 }
 
+#game-board {
+  display: none;
+  position: center;
+  width: 100%;
+  height: 100%;
+
+}
+
+#panel-body {
+  text-align: center;
+  font-family: monospace;
+  list-style: none;
+  font-size: 20px;
+}
+
+.panel {
+  border: transparent;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#player-select-heading{
+  font-family: monospace;
+  background-color: transparent;
+}
+
+.panel-heading h2 {
+  font-size: 40px;
+}
+.panel-heading {
+  background-color: transparent;
+  border: transparent;
+}
+
 .row-1 {
   border-bottom: 5px solid black;
   border-top: 5px solid black;
@@ -21,9 +56,15 @@
 
 .col-md-4 {
   height: 300px;
-  text-align: center;
+
 }
 
 #game-board {
   margin-top: 100px;
+}
+.board p{
+  display:inline-block;
+  margin-top: 5%;
+  font-size: 15em;
+  width: 100%;
 }

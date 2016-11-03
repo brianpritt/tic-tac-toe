@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.1.1.js"></script>
@@ -13,21 +14,31 @@
       <div class="jumbotron">
         <h1>TIC-TAC-TOE</h1>
       </div>
+      <div class="panel panel-default" id="player-select">
+        <div class="panel-heading" id="player-select-heading">
+          <h2>Select Number of Players:</h2>
+        </div>
+        <div class="panel-body"></div>
+          <ul id="panel-body">
+            <li>1 Player</li>
+            <li id="two-players">2 Players</li>
+          </ul>
+      </div>
       <div id="game-board">
         <div class="row row-0">
-          <div class="col-md-4 space-0"></div>
-          <div class="col-md-4 space-1"></div>
-          <div class="col-md-4 space-2"></div>
+          <div class="col-md-4 col-sm-4 col-xs-4 space-0 board" id="0"><p></p></div>
+          <div class="col-md-4 col-sm-4 col-xs-4 space-1 board" id="1"><p></p></div>
+          <div class="col-md-4 col-sm-4 col-xs-4 space-2 board" id="2"><p></p></div>
         </div> <!-- .row-0 -->
         <div class="row row-1">
-          <div class="col-md-4 space-3"></div>
-          <div class="col-md-4 space-4"></div>
-          <div class="col-md-4 space-5"></div>
+          <div class="col-md-4 col-sm-4 col-xs-4 space-3 board" id="3"><p></p></div>
+          <div class="col-md-4 col-sm-4 col-xs-4 space-4 board" id="4"><p></p></div>
+          <div class="col-md-4 col-sm-4 col-xs-4 space-5 board" id="5"><p></p></div>
         </div> <!-- .row-1 -->
         <div class="row row-2">
-          <div class="col-md-4 space-6"></div>
-          <div class="col-md-4 space-7"></div>
-          <div class="col-md-4 space-8"></div>
+          <div class="col-md-4 col-sm-4 col-xs-4 space-6 board" id="6"><p></p></div>
+          <div class="col-md-4 col-sm-4 col-xs-4 space-7 board" id="7"><p></p></div>
+          <div class="col-md-4 col-sm-4 col-xs-4 space-8 board" id="8"><p></p></div>
         </div> <!-- .row-2 -->
       </div> <!-- #game-board -->
     </div> <!-- .container -->

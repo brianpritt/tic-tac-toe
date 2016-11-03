@@ -45,61 +45,21 @@ isItOver = function() {
 //////////Front-End////////////
 $(function() {
   var currentPlayer = playerOne;
-  // var spaceArray=[0,1,2,3,4,5,6,7,8];
-  // var index = 0;
-  $(".space-0").click(function() {
-    markedPlayer(currentPlayer , 0);
-    $(this).text(spaces[0].marked);
-    currentPlayer = switchPlayer(currentPlayer);
-    isItOver();
-  })
-  $(".space-1").click(function() {
-    markedPlayer(currentPlayer, 1);
-    $(this).text(spaces[1].marked);
-    currentPlayer = switchPlayer(currentPlayer);
-    isItOver();
-  })
-  $(".space-2").click(function() {
-    markedPlayer(currentPlayer, 2);
-    $(this).text(spaces[2].marked);
-    currentPlayer = switchPlayer(currentPlayer);
-    isItOver();
-  })
-  $(".space-3").click(function() {
-    markedPlayer(currentPlayer, 3);
-    $(this).text(spaces[3].marked);
-    currentPlayer = switchPlayer(currentPlayer);
-    isItOver();
-  })
-  $(".space-4").click(function() {
-    markedPlayer(currentPlayer, 4);
-    $(this).text(spaces[4].marked);
-    currentPlayer = switchPlayer(currentPlayer);
-    isItOver();
-  })
-  $(".space-5").click(function() {
-    markedPlayer(currentPlayer, 5);
-    $(this).text(spaces[5].marked);
-    currentPlayer = switchPlayer(currentPlayer);
-    isItOver();
-  })
-  $(".space-6").click(function() {
-    markedPlayer(currentPlayer, 6);
-    $(this).text(spaces[6].marked);
-    currentPlayer = switchPlayer(currentPlayer);
-    isItOver();
-  })
-  $(".space-7").click(function() {
-    markedPlayer(currentPlayer, 7);
-    $(this).text(spaces[7].marked);
-    currentPlayer = switchPlayer(currentPlayer);
 
-    isItOver();
-  })
-  $(".space-8").click(function() {
-    markedPlayer(currentPlayer, 8);
-    $(this).text(spaces[8].marked);
+
+  $("#two-players").click(function() {
+    $("#player-select").hide();
+    $("#game-board").fadeIn(2000);
+  });
+
+  $(".board").click(function() {
+    var value = this.id
+
+    markedPlayer(currentPlayer , value);
+    $(this).find("p").text(spaces[value].marked);
     currentPlayer = switchPlayer(currentPlayer);
     isItOver();
+    $(".space-" +value).off("click");
   })
+
 });//end of document.ready
