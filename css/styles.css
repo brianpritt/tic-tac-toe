@@ -1,3 +1,19 @@
+.overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.8); /*dim the background*/
+}
+}
+
+.container {
+  position: relative;
+}
+
 .jumbotron {
   text-align: center;
   font-family: monospace;
@@ -6,11 +22,9 @@
 
 #game-board {
   display: none;
-  position: center;
   margin-top: 10em;
   width: 100%;
   height: 100%;
-
 }
 
 #panel-body {
@@ -33,7 +47,7 @@
 }
 
 .panel-heading h2 {
-  font-size: 40px;
+  font-size: 2.5em;
 }
 .panel-heading {
   background-color: transparent;
@@ -51,44 +65,60 @@
 }
 
 .row {
-  height: 300px;
+  height: 18em;
   text-align: center;
 }
 
 .col-md-4 {
-  height: 300px;
-
+  height: 18em;
 }
 
 .board p{
   display:inline-block;
-  margin-top: 5%;
-  font-size: 15em;
+  margin-top: 65%;
+  font-size: 6em;
   width: 100%;
+  text-align: center;
 }
-#playerOneWinner {
+
+#playerOneWinner, #playerTwoWinner, #catsGame {
   display: none;
   height:10%;
   font-family: monospace;
-  font-size: 5em;
+  font-size: 1em;
   color: red;
   text-align: center;
+  color: yellow;
 }
 
-#playerTwoWinner {
-  display: none;
-  height:10%;
-  font-family: monospace;
-  font-size: 5em;
-  color: blue;
-  text-align: center;
+
+.startOver {
+  font-size: 20px;
 }
 
-#catsGame {
-  display: none;
-  height:10%;
-  font-family: monospace;
-  font-size: 5em;
-  color: green;
-  text-align: center;
+
+@media screen and (min-width: 541px) {
+  .board p {
+    display:inline-block;
+    margin-top: 3%;
+    font-size: 10em;
+    width: 100%;
+    text-align: center;
+  }
+
+  #playerOneWinner, #playerTwoWinner, #catsGame {
+    display: none;
+    height:10%;
+    font-family: monospace;
+    font-size: 2em;
+    text-align: center;
+    color: yellow;
+  }
+
+
+
+  .startOver {
+    font-size: 20px;
+    margin-top: 10px;
+  }
 }
